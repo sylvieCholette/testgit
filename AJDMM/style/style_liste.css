@@ -1,0 +1,146 @@
+      
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  z-index: 99;
+  font-size: 100%;
+  border: none;
+  outline: none;
+  background-color: #f87e00;
+            background-image: linear-gradient(to bottom, #f99b3b, #f87e00);
+  color: #e4f2f7;
+  cursor: pointer;
+  padding: 1%;
+  border-radius: 12%;
+}
+
+
+
+
+table, tr, th, td,thead {
+            border: 1px solid #003e7e;
+            border-collapse: collapse;
+            border-left-style: none;
+            border-right-style: none;
+            padding-left: 1%;
+            padding-right: 2%;
+            }
+        
+    th {
+            text-align: left;
+            } 
+        
+    thead{
+            background-color: #89dbf5;
+            }       
+        
+    tr:hover{
+            background-color: #e4f2f7;
+            }     
+        
+     .gros{
+            font-size: 1.2em;
+        }     
+        
+     
+
+
+
+        h2{
+            text-decoration: underline;
+        }   
+        span{
+          font-size: 1.3em;
+            font-style: italic;
+            font-family: sans-serif;
+        }   
+        
+        p{
+            font-size: 1.2em;
+        }
+ 
+        .gros{
+            font-size: 1.5em;
+        }
+
+ @media (max-width: 700px){
+          
+    .table thead {
+        display: none;
+    }
+    .table tr{
+        display: block;
+        margin-bottom: 8%;
+        border-bottom-style: none;
+        padding-top: 3%;
+        }
+    .table td {
+        display: block;
+        text-align: right;
+        border-bottom-style: none;
+        border-top-style: none;
+        }
+    .table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        }
+        
+    }   
+
+
+
+
+
+ /**************************
+		Desktop
+**************************/
+        @media (min-width: 920px) {  
+                .anim{
+            position: relative;
+  -webkit-animation-name: bouge; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: bouge;
+  animation-duration: 4s;
+  animation-delay: 2s;
+                  
+        }
+        /* Safari 4.0 - 8.0 */
+        @-webkit-keyframes bouge {
+  0%   {background-color: skyblue; left:0px; top:0px;}
+  50%  {background-color:#0079c2; color:#f7f5f5;  left:200px; top:0px;}
+  
+  100%  {background-color:skyblue; left:0px; top:0px;}
+  
+}
+
+/* Standard syntax */
+@keyframes bouge {
+  0%   {background-color:skyblue; left:0px; top:0px;}
+  50%  {background-color:#0079c2; color:#f7f5f5; left:200px; top:0px;}
+  
+  100%  {background-color:skyblue; left:0px; top:0px;}
+            }
+            
+            
+  #myBtn {
+  
+  right: 28%;
+  
+  border-radius: 12%;
+}
+
+
+
+
+#myBtn:hover {
+  background-color: #003e7e;
+}
+                 
+            
+}
+        
+ 
